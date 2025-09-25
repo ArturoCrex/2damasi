@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+    <title>2damasi</title>
+    <link href="https://arturocrex.github.io/2damasi/feed.xml" rel="self" />
+    <link href="https://arturocrex.github.io/2damasi" />
+    <updated>2025-09-25T20:46:50+02:00</updated>
+    <author>
+        <name>Arturo Vaquero Serrano</name>
+    </author>
+    <id>https://arturocrex.github.io/2damasi</id>
+
+    <entry>
+        <title>La inteligencia artificial en casas: una revolución en el hogar</title>
+        <author>
+            <name>Arturo Vaquero Serrano</name>
+        </author>
+        <link href="https://arturocrex.github.io/2damasi/post-principal.html"/>
+        <id>https://arturocrex.github.io/2damasi/post-principal.html</id>
+
+        <updated>2025-09-25T20:31:31+02:00</updated>
+            <summary>
+                <![CDATA[
+                    La inteligencia artificial (IA) está transformando rápidamente la manera en que vivimos, y uno de los espacios donde su impacto es más evidente es en nuestros hogares. Las casas inteligentes equipadas con tecnologías basadas en IA están cambiando la forma en que gestionamos nuestras tareas&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                
+  <p>
+    <strong></strong>La inteligencia artificial (IA) está transformando rápidamente la manera en que vivimos, y uno de los espacios donde su impacto es más evidente es en nuestros hogares. Las casas inteligentes equipadas con tecnologías basadas en IA están cambiando la forma en que gestionamos nuestras tareas diarias, mejorando la comodidad, la seguridad y la eficiencia energética.<br><br>El uso de la IA en el hogar permite automatizar procesos como el control de la iluminación, la temperatura, la seguridad y los electrodomésticos. Por ejemplo, los asistentes virtuales pueden aprender las rutinas de sus habitantes para ajustar automáticamente la calefacción o encender las luces al llegar a casa, lo que no solo mejora la experiencia de vida, sino que también contribuye al ahorro energético. Además, la IA puede anticipar problemas domésticos, como detectar fugas de agua o fallas en electrodomésticos, y alertar a los usuarios para evitar daños mayores.<br><br>La seguridad es otro aspecto crucial donde la IA juega un papel importante. Sistemas de vigilancia inteligentes pueden reconocer rostros, detectar movimientos sospechosos y enviar alertas inmediatas, brindando una mayor tranquilidad a los residentes. También se integran con sistemas de alarma y servicios de emergencia para una respuesta más rápida.<br><br>En resumen, la incorporación de la inteligencia artificial en las casas no solo hace que nuestro día a día sea más cómodo y eficiente, sino que también abre la puerta a un futuro donde los hogares sean más sostenibles, seguros y adaptados a nuestras necesidades individuales. La IA en el hogar representa una evolución significativa que está cambiando la manera en que vivimos y nos relacionamos con nuestro entorno.
+  </p>
+
+    <figure class="post__image post__image--center">
+      <img loading="lazy" src="https://arturocrex.github.io/2damasi/media/posts/5/IA-hogar2.jpg" height="1024" width="1024" alt="Imagen de Casa con AI"  sizes="(min-width: 1500px) calc(7.87vw + 610px), (min-width: 900px) calc(44.48vw + 68px), (min-width: 780px) calc(8vw + 604px), calc(84.35vw + 23px)" srcset="https://arturocrex.github.io/2damasi/media/posts/5/responsive/IA-hogar2-xs.jpg 300w ,https://arturocrex.github.io/2damasi/media/posts/5/responsive/IA-hogar2-sm.jpg 480w ,https://arturocrex.github.io/2damasi/media/posts/5/responsive/IA-hogar2-md.jpg 768w">
+      
+    </figure>
+            ]]>
+        </content>
+    </entry>
+</feed>

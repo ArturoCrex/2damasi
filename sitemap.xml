@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://arturocrex.github.io/2damasi/sitemap.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<url>
+<loc>https://arturocrex.github.io/2damasi/</loc>
+</url>
+<url>
+<loc>https://arturocrex.github.io/2damasi/hola.html</loc>
+<lastmod>2025-09-25T20:31:14+02:00</lastmod>
+</url>
+<url>
+<loc>https://arturocrex.github.io/2damasi/post-principal.html</loc>
+<lastmod>2025-09-25T20:46:50+02:00</lastmod>
+<image:image>
+<image:loc>https://arturocrex.github.io/2damasi/media/posts/5/IA-hogar2.jpg</image:loc>
+<image:title><![CDATA[Imagen de Casa con AI]]></image:title>
+</image:image>
+</url>
+</urlset>

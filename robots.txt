@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://arturocrex.github.io/2damasi/sitemap.xml
