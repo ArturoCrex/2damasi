@@ -3,14 +3,14 @@
     <title>2damasi</title>
     <link href="https://arturocrex.github.io/2damasi/feed.xml" rel="self" />
     <link href="https://arturocrex.github.io/2damasi" />
-    <updated>2025-09-25T20:46:50+02:00</updated>
+    <updated>2025-09-26T09:29:28+02:00</updated>
     <author>
         <name>Arturo Vaquero Serrano</name>
     </author>
     <id>https://arturocrex.github.io/2damasi</id>
 
     <entry>
-        <title>La inteligencia artificial en casas: una revolución en el hogar</title>
+        <title>La rica gastronomía española </title>
         <author>
             <name>Arturo Vaquero Serrano</name>
         </author>
@@ -20,20 +20,84 @@
         <updated>2025-09-25T20:31:31+02:00</updated>
             <summary>
                 <![CDATA[
-                    La inteligencia artificial (IA) está transformando rápidamente la manera en que vivimos, y uno de los espacios donde su impacto es más evidente es en nuestros hogares. Las casas inteligentes equipadas con tecnologías basadas en IA están cambiando la forma en que gestionamos nuestras tareas&hellip;
+                    La comida española es reconocida a nivel mundial por su sabor, variedad y tradición. Influenciada por diversas culturas a lo largo de la historia, la gastronomía de España se caracteriza por el uso de ingredientes frescos, aceite de oliva, especias aromáticas y una fuerte conexión&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
                 
   <p>
-    <strong></strong>La inteligencia artificial (IA) está transformando rápidamente la manera en que vivimos, y uno de los espacios donde su impacto es más evidente es en nuestros hogares. Las casas inteligentes equipadas con tecnologías basadas en IA están cambiando la forma en que gestionamos nuestras tareas diarias, mejorando la comodidad, la seguridad y la eficiencia energética.<br><br>El uso de la IA en el hogar permite automatizar procesos como el control de la iluminación, la temperatura, la seguridad y los electrodomésticos. Por ejemplo, los asistentes virtuales pueden aprender las rutinas de sus habitantes para ajustar automáticamente la calefacción o encender las luces al llegar a casa, lo que no solo mejora la experiencia de vida, sino que también contribuye al ahorro energético. Además, la IA puede anticipar problemas domésticos, como detectar fugas de agua o fallas en electrodomésticos, y alertar a los usuarios para evitar daños mayores.<br><br>La seguridad es otro aspecto crucial donde la IA juega un papel importante. Sistemas de vigilancia inteligentes pueden reconocer rostros, detectar movimientos sospechosos y enviar alertas inmediatas, brindando una mayor tranquilidad a los residentes. También se integran con sistemas de alarma y servicios de emergencia para una respuesta más rápida.<br><br>En resumen, la incorporación de la inteligencia artificial en las casas no solo hace que nuestro día a día sea más cómodo y eficiente, sino que también abre la puerta a un futuro donde los hogares sean más sostenibles, seguros y adaptados a nuestras necesidades individuales. La IA en el hogar representa una evolución significativa que está cambiando la manera en que vivimos y nos relacionamos con nuestro entorno.
+    <br>La comida española es reconocida a nivel mundial por su sabor, variedad y tradición. Influenciada por diversas culturas a lo largo de la historia, la gastronomía de España se caracteriza por el uso de ingredientes frescos, aceite de oliva, especias aromáticas y una fuerte conexión con los productos locales. Desde tapas hasta platos más elaborados, la cocina española tiene algo para todos los gustos.<br><br>A continuación, te presento dos recetas típicas: la tortilla de patatas y la paella de mariscos.<strong></strong>
   </p>
 
-    <figure class="post__image post__image--center">
-      <img loading="lazy" src="https://arturocrex.github.io/2damasi/media/posts/5/IA-hogar2.jpg" height="1024" width="1024" alt="Imagen de Casa con AI"  sizes="(min-width: 1500px) calc(7.87vw + 610px), (min-width: 900px) calc(44.48vw + 68px), (min-width: 780px) calc(8vw + 604px), calc(84.35vw + 23px)" srcset="https://arturocrex.github.io/2damasi/media/posts/5/responsive/IA-hogar2-xs.jpg 300w ,https://arturocrex.github.io/2damasi/media/posts/5/responsive/IA-hogar2-sm.jpg 480w ,https://arturocrex.github.io/2damasi/media/posts/5/responsive/IA-hogar2-md.jpg 768w">
-      
-    </figure>
+    <h4 id="recetas-espanolas-tradicionales">
+      Recetas españolas tradicionales
+    </h4>
+<div>    <table border="1" cellpadding="8">
+        <thead>
+            <tr>
+                <th>Plato</th>
+                <th>Ingredientes principales</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Tortilla de patatas</strong></td>
+                <td>
+                    <ul>
+                        <li>4 patatas medianas</li>
+                        <li>6 huevos</li>
+                        <li>1 cebolla (opcional)</li>
+                        <li>Aceite de oliva</li>
+                        <li>Sal</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Paella de mariscos</strong></td>
+                <td>
+                    <ul>
+                        <li>400 g de arroz</li>
+                        <li>500 g de mariscos mixtos (calamares, mejillones, gambas)</li>
+                        <li>1 pimiento rojo</li>
+                        <li>1 tomate</li>
+                        <li>2 dientes de ajo</li>
+                        <li>Caldo de pescado (1 litro aprox.)</li>
+                        <li>Hebras de azafrán o colorante</li>
+                        <li>Aceite de oliva</li>
+                        <li>Sal</li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Cómo preparar cada receta</h2>
+
+    <h3>🥔 Tortilla de patatas</h3>
+    <ol>
+        <li>Pela las patatas y córtalas en rodajas finas.</li>
+        <li>Si decides usar cebolla, pícala en juliana.</li>
+        <li>En una sartén grande, calienta abundante aceite de oliva y fríe las patatas (y cebolla, si usas) a fuego medio hasta que estén blandas, no crujientes.</li>
+        <li>Bate los huevos en un bol grande, añade sal al gusto.</li>
+        <li>Escurre las patatas del aceite y mézclalas con el huevo batido.</li>
+        <li>Vierte la mezcla en una sartén con un poco de aceite caliente y cocina a fuego medio-bajo unos 4-5 minutos por cada lado, ayudándote con un plato para darle la vuelta.</li>
+        <li>Sirve caliente o a temperatura ambiente.</li>
+    </ol>
+
+    <h3>🥘 Paella de mariscos</h3>
+    <ol>
+        <li>En una paellera o sartén grande, calienta un poco de aceite de oliva.</li>
+        <li>Sofríe el ajo picado, el pimiento en tiras y el tomate rallado.</li>
+        <li>Añade los mariscos y cocina durante unos minutos hasta que empiecen a soltar su jugo.</li>
+        <li>Incorpora el arroz y remueve un par de minutos para que se impregne de sabor.</li>
+        <li>Agrega el caldo caliente junto con el azafrán o colorante. Añade sal al gusto.</li>
+        <li>Cocina a fuego medio-alto los primeros 10 minutos, luego baja el fuego y deja cocer otros 10 minutos sin remover.</li>
+        <li>Deja reposar 5 minutos antes de servir.</li>
+    </ol>
+
+</body>
+</html></div>
             ]]>
         </content>
     </entry>
