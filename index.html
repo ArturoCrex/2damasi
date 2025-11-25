@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASI | Portafolio</title>
+    <style>
+        /* --- CONFIGURACIÓN DE VARIABLES (TEMA) --- */
+        :root {
+            /* TEMA CLARO (MEJORADO: Más contraste y profundidad) */
+            --bg-body: #F2F4F8;             /* Gris azulado suave para resaltar las tarjetas blancas */
+            --bg-nav: #FFFFFF;
+            --bg-card: #FFFFFF;
+            
+            --text-main: #0a0a0a;           /* Negro más intenso */
+            --text-secondary: #404040;      /* Gris más oscuro para mejor legibilidad */
+            
+            /* Nuevo acento: Un "Dark Goldenrod" más vibrante y visible */
+            --accent: #B8860B;              
+            --accent-hover: #966F09;
+            
+            --border: #D1D5DB;              /* Borde un poco más visible */
+            /* Sombra más pronunciada para dar efecto "pop" en modo día */
+            --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+            --bg-footer: #E5E7EB;
+            --text-footer: #4B5563;
+        }
+
+        [data-theme="dark"] {
+            /* TEMA OSCURO (Tu Paleta Material/Oro Original) */
+            --bg-body: #121212;             
+            --bg-nav: #1E1E1E;              
+            --bg-card: #1E1E1E;             
+            
+            --text-main: #E0E0E0;           
+            --text-secondary: #A0A0A0;      
+            
+            --accent: #C5A059;              
+            --accent-hover: #D4B470;        
+            
+            --border: #333333;              
+            --shadow: 0 4px 10px rgba(0, 0, 0, 0.6); 
+
+            --bg-footer: #181818;           
+            --text-footer: #888888;
+        }
+
+        /* --- ESTILOS GENERALES --- */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* --- NAVBAR --- */
+        header {
+            background-color: var(--bg-nav);
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid var(--border);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        @media (max-width: 900px) {
+            nav {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--accent);
+            letter-spacing: 1px;
+            text-transform: uppercase; 
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-weight: 600; /* Un poco más grueso para que se vea bien */
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+
+        /* Botón Toggle Día/Noche */
+        .theme-toggle {
+            background: none;
+            border: 1px solid var(--border);
+            color: var(--text-main);
+            padding: 0.5rem 1rem;
+            border-radius: 4px; 
+            cursor: pointer;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background-color: transparent;
+        }
+
+        .theme-toggle:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+            background-color: rgba(0,0,0,0.02); /* Sutil fondo al hacer hover */
+        }
+
+        /* --- CONTENEDOR PRINCIPAL --- */
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-top: 1rem;
+        }
+        
+        .intro h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 300; 
+            letter-spacing: -0.5px;
+            color: var(--text-main);
+        }
+
+        /* --- LISTA DE PROYECTOS --- */
+        .projects-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .project-card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 6px; /* Un poco más redondeado para look moderno */
+            padding: 2.5rem; 
+            box-shadow: var(--shadow);
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2rem;
+            scroll-margin-top: 120px; 
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Detalle dorado a la izquierda al hacer hover */
+        .project-card::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 4px; /* Un poco más grueso */
+            background-color: var(--accent);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .project-card:hover::before {
+            opacity: 1;
+        }
+
+        .project-card:hover {
+            transform: translateY(-4px); /* Sube un poco más al hacer hover */
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            border-color: var(--accent); /* El borde cambia de color sutilmente */
+        }
+
+        .project-card > div {
+            flex: 1;
+        }
+
+        .project-title {
+            font-size: 1.5rem;
+            margin-bottom: 0.8rem;
+            color: var(--text-main);
+            font-weight: 600; /* Título con más peso visual */
+            letter-spacing: 0.5px;
+        }
+
+        .project-desc {
+            color: var(--text-secondary);
+            font-size: 1rem;
+            margin-bottom: 0;
+            font-weight: 400; /* Texto normal, no light, para mejor lectura */
+        }
+
+        /* Botón estilo "Outline" elegante */
+        .btn-docs {
+            display: inline-block;
+            text-align: center;
+            background-color: transparent;
+            color: var(--accent); 
+            border: 2px solid var(--accent); /* Borde un poco más grueso (2px) */
+            padding: 0.6rem 1.5rem;
+            border-radius: 4px;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+            white-space: nowrap;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-docs:hover {
+            background-color: var(--accent);
+            color: #FFFFFF; /* Texto blanco al hacer hover para máximo contraste */
+            box-shadow: 0 4px 12px rgba(184, 134, 11, 0.3);
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            text-align: center;
+            padding: 4rem 1.5rem;
+            margin-top: 6rem;
+            background-color: var(--bg-footer);
+            color: var(--text-footer);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 500;
+        }
+
+        /* --- RESPONSIVE --- */
+        @media (max-width: 600px) {
+            .nav-links {
+                font-size: 0.8rem;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+            
+            .project-card {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1.5rem;
+                padding: 1.5rem;
+            }
+            
+            .btn-docs {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">ASI Portafolio</div>
+            <ul class="nav-links">
+                <li><a href="#proyecto-1">1. Configurar Raspi y MacMini</a></li>
+                <li><a href="#proyecto-2">2. Instalar Jetson Nano</a></li>
+                <li><a href="#proyecto-3">3. Por hacer</a></li>
+                <li><a href="#proyecto-4">4. Por hacer</a></li>
+                <li><a href="#proyecto-5">5. Por hacer</a></li>
+            </ul>
+            <button id="theme-btn" class="theme-toggle" aria-label="Cambiar tema">
+                <span id="icon">🌙</span> <span id="text-mode">Modo Noche</span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h1>Proyectos</h1>
+            <p style="color: var(--text-secondary);">Lista de todos los proyectos que hemos hechos en clase de Ampliación de Sistemas Informáticos.</p>
+        </section>
+
+        <section class="projects-grid">
+            
+            <article class="project-card" id="proyecto-1">
+                <div>
+                    <h3 class="project-title">1. Configuración de Raspberry Pi y de la MacMini</h3>
+                    <p class="project-desc">
+                        Configuración de la Raspberry Pi y de la MacMini hecha en clase y paso por paso, explicado al detalle y de forma facil de entender.
+                    </p>
+                </div>
+                <a href="Documentacion/DocumentacionRas_MacMini.html" class="btn-docs">Documentación</a>
+            </article>
+
+            <article class="project-card" id="proyecto-2">
+                <div>
+                    <h3 class="project-title">2. Instalación de la Jetson Nano</h3>
+                    <p class="project-desc">
+                        Configuración de la Jetson Orin Nano hecha en clase y paso por paso, explicado al detalle y de forma facil de entender.
+                    </p>
+                </div>
+                <a href="#" class="btn-docs">Documentación</a>
+            </article>
+
+            <article class="project-card" id="proyecto-3">
+                <div>
+                    <h3 class="project-title">3. Más en el Futuro</h3>
+                    <p class="project-desc">
+                        Aquí se guardarán más tareas en el futuro, ¡¡No te las pierdas!!.
+                    </p>
+                </div>
+                <a href="#" class="btn-docs">Documentación</a>
+            </article>
+
+            <article class="project-card" id="proyecto-4">
+                <div>
+                    <h3 class="project-title">4. Más en el Futuro</h3>
+                    <p class="project-desc">
+                        Aquí se guardarán más tareas en el futuro, ¡¡No te las pierdas!!.
+                    </p>
+                </div>
+                <a href="#" class="btn-docs">Documentación</a>
+            </article>
+
+            <article class="project-card" id="proyecto-5">
+                <div>
+                    <h3 class="project-title">5. Más en el Futuro</h3>
+                    <p class="project-desc">
+                        Aquí se guardarán más tareas en el futuro, ¡¡No te las pierdas!!.
+                    </p>
+                </div>
+                <a href="#" class="btn-docs">Documentación</a>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Arturo Vaquero Serrano. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('theme-btn');
+        const icon = document.getElementById('icon');
+        const textMode = document.getElementById('text-mode');
+        const html = document.documentElement;
+
+        // 1. Cargar tema guardado. 
+        // IMPORTANTE: Si no hay tema guardado, forzamos 'dark' por defecto.
+        const savedTheme = localStorage.getItem('theme');
+        
+        if (savedTheme === 'dark' || !savedTheme) {
+            setDark(true);
+        } else {
+            setDark(false);
+        }
+
+        // 2. Función para cambiar estado visual
+        function setDark(isDark) {
+            if (isDark) {
+                html.setAttribute('data-theme', 'dark');
+                icon.textContent = '☀️';
+                textMode.textContent = 'Modo Día';
+            } else {
+                html.removeAttribute('data-theme');
+                icon.textContent = '🌙';
+                textMode.textContent = 'Modo Noche';
+            }
+        }
+
+        // 3. Evento Click
+        btn.addEventListener('click', () => {
+            const isDark = html.getAttribute('data-theme') === 'dark';
+            setDark(!isDark);
+            localStorage.setItem('theme', !isDark ? 'dark' : 'light');
+        });
+    </script>
+</body>
+</html>
